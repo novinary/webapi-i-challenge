@@ -9,4 +9,3 @@ Step 2
 
 Step 3
 - Handle get request to our roots. Get takes endpoints and a callback 
-
