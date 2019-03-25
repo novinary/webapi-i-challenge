@@ -14,3 +14,4 @@ Handle get request to our roots. Get takes endpoints and a callback
     - two cases - either we are finding a user or not
     in both cases we are sending a status and response every time 
 - create endpoint to get a user by id (same as above but find by id)- done
+- Throw an error if a user is not defined - done
