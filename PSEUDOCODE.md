@@ -5,4 +5,8 @@ Step 1
 - all the methods we are going to use off the server are built into express not node
 
 Step 2
-- Get the server to listen 
+- Get the server to listen - Done 
+
+Step 3
+- Handle get request to our roots. Get takes endpoints and a callback 
+
