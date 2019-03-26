@@ -35,3 +35,22 @@ If there's an error in removing the user from the database:
 cancel the request.
 respond with HTTP status code 500.
 return the following JSON object: { error: "The user could not be removed" }. - Done
+
+Step 5 ** UPDATE METHOD ENDPOINTS **
+When the client makes a PUT request to /api/users/:id:
+If the user with the specified id is not found:
+return HTTP status code 404 (Not Found). - Done
+return the following JSON object: { message: "The user with the specified ID does not exist."} - Done
+
+If the request body is missing the name or bio property:
+cancel the request. respond with HTTP status code 400 (Bad Request). - Done
+return the following JSON response: { errorMessage: "Please provide name and bio for the user." }. - Done
+
+If there's an error when updating the user
+cancel the request. respond with HTTP status code 500. - Done
+return the following JSON object: { error: "The user information could not be modified." }. - Done
+
+If the user is found and the new information is valid:
+update the user document in the database using the new information sent in the reques body.- Done
+return HTTP status code 200 (OK). - Done
+return the newly updated user document. - Done
