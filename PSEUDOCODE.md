@@ -19,7 +19,8 @@ Handle get request to our roots. Get takes endpoints and a callback
 Step 4 ** POST METHOD ENDPOINTS **
 POST allows us to add data to the db hence why more complicated than GET
 I'll be using POSTMAN to test this request. POSTMAN is a tool for sending requests. It allows us to send requests to servers including mobile
+- Use a json parser middleware server.use(express.json());- Done
 - If the information about the user is valid:
 save the new user the the database.
 return HTTP status code 201 (Created).
-return the newly created user document.
+return the newly created user document. - Done
