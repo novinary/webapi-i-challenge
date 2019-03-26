@@ -24,3 +24,14 @@ I'll be using POSTMAN to test this request. POSTMAN is a tool for sending reques
 save the new user the the database.
 return HTTP status code 201 (Created).
 return the newly created user document. - Done
+
+Step 4 ** DELETE METHOD ENDPOINTS **
+When the client makes a DELETE request to /api/users/:id:
+
+If the user with the specified id is not found:
+return HTTP status code 404 (Not Found). - Done
+return the following JSON object: { message: "The user with the specified ID does not exist." }. - Done
+If there's an error in removing the user from the database:
+cancel the request.
+respond with HTTP status code 500.
+return the following JSON object: { error: "The user could not be removed" }. - Done
